@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact me</title>
+  <style>
+    .main-wrapper {
+      background-color: bisque;
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 12px;
+
+    }
+    h2 {
+      text-align: center;
+      padding-top: 120px;
+    }
+    .input-a {
+      background-color: rgb(1, 196, 1);
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .reset-a {
+      background-color: red;
+      border-radius: 12px;
+      font-size: 15px;
+      color: white;
+    }
+
+    .header-a {
+      background-color: rosybrown;
+      padding: 20px;
+    }
+
+    body {
+      background-color: bisque;
+    }
+
+    form {
+      background-color: white;
+      width: 300px;
+      border: 1px solid;
+      border-radius: 12px;
+      padding: 30px;
+
+    }
+    .p1 {
+      background-color: rgb(246, 246, 246);
+    }
+    .input-b{
+      display: inline-block;
+      background-color: rgb(246, 246, 246);
+      width: 95%;
+    }
+    .select-box {
+      background-color: rgb(246, 246, 246);
+      width: 97%;
+      /* padding-right: calc(95% - 2px); */
+    }
+    .select-box select{
+      /* background-color: aqua; */
+      width: 100%;
+      
+    }
+    textarea {
+      background-color: rgb(246, 246, 246);
+      width: 95%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-a">
+        <a href="./index.html">Profile</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./experience.html">Work Experience</a> |
+        <a href="#">Contact me</a> |
+      </div>
+
+    </nav>
+  </header>
+  <div class="main-wrapper">
+  <div>
+    <h2>If you have any question <br> please contact me <br><br><img src="pics/arrow-right.svg" alt="contect me" width="50px"></h2>
+  </div>
+  <br>
+
+  <div>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+      <p style="font-size: small;" class="p1">Enter your info..</p>
+      <br>
+      <div>
+        <label for="name">Your name</label><br>
+        <input type="text" name="name" placeholder="your name.." id="name" class="input-b">
+      </div>
+      <br>
+      <div>
+        <label>
+          Email : <br>
+          <input type="email" name="email" placeholder="your email.." class="input-b">
+        </label>
+      </div>
+      <br><br>
+      Gender :
+      <label> <input type="radio" name="gender" value="male">Male</label>
+      <label> <input type="radio" name="gender" value="female">Female</label>
+      <label> <input type="radio" name="gender" value="others">Other</label>
+  
+  <br><br>
+  <div>
+    <label>
+      Country :
+      <div class="select-box">
+      <select name="country">
+        <option value="selected disabled">Please select</option>
+        <option>Thailand</option>
+        <option>Singapore</option>
+        <option>Austraria</option>
+        <option>USA</option>
+      </select>
+    </div>
+      <br><br>
+      <div>
+        Message : <br> 
+       <textarea name="message" rows="5" cols="25" placeholder="Write something.."></textarea>
+      </div>
+
+    </label>
+  </div>
+  <br><br>
+  <div>
+    <input type="submit" value="Send" class="input-a">
+    <input type="reset" value="Clear" class="reset-a">
+  </div>
+</div>
+  </form>
+</div>
+</body>
+
+</html>
